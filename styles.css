@@ -1,0 +1,91 @@
+body {
+  background-color: #fdf1f6;
+  font-family: sans-serif;
+  font-size: 16px;
+}
+    
+dt {
+  float: left;
+  clear: left;
+  width: 250px;
+  padding-bottom: 10px;
+}
+    
+dd {
+  float: left;
+  word-wrap: break-word;
+}
+    
+dt a {
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: #0020C2;
+}
+    
+dt a:hover {
+  text-decoration: underline;
+}
+    
+header {
+  margin-bottom: 50px;
+}
+    
+header h1 {
+  font-size: 3rem;
+  border-bottom: 1px solid #4863A0;
+  color: #4863A0;
+}
+    
+header h3 {
+  color: #0020C2;
+  font-style: italic;
+  font-size: 2rem;
+}
+
+#bodyContainer {
+  width: calc(100% - 200px);
+  margin-left: auto;
+  margin-right: auto;
+}
+    
+.lead{
+  font-size: 1.3rem;
+}
+
+#dropContainer {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+}
+
+#dropTarget {
+  border: 1px solid black;
+  min-height: 400px;
+  order: 0;
+  width: 100%;
+  margin: 10px;
+  text-align: center;
+}
+
+#imageView {
+  background-color: #fbdfea;
+  flex: 0 0 400px;
+  height: 400px;
+  margin: 10px;
+  border: 1px solid black;
+  text-align: center;
+}
+
+#imageView img {
+  width: 400px;
+  height: 400px;
+}
+
+#dropTarget h4, #imageView h4 {
+  margin-top: 40px;
+  font-size: 1.6rem;
+}
+
+#dropTarget.active {
+  background-color: lightgreen;  
+}
